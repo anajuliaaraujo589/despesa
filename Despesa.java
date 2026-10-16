@@ -1,7 +1,7 @@
 //ana julia cordeiro//
 package model;
 public class Despesa {
-    
+   
     //atributos
     private String descricao;
     private double valor;
@@ -20,7 +20,7 @@ public class Despesa {
     }
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    } 
+    }
 
     public double getValor() {
         return this.valor;
@@ -37,4 +37,5 @@ public class Despesa {
         this.status = status;
     }
 }
+
 
