@@ -1,3 +1,4 @@
+package model;
 public class Receita {
     private int id;
     private String descricao;

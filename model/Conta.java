@@ -1,4 +1,5 @@
- public class Conta { 
+package model; 
+public class Conta { 
    
     private int numero; 
     private String cliente; 

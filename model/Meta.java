@@ -1,3 +1,4 @@
+package model;
   public class Meta {
     private int id;
     private String descricao;
