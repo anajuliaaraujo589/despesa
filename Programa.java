@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 import model.Conta;
 import model.Despesa;
 import model.Meta;
@@ -7,11 +7,36 @@ import model.Receita;
 public class Programa {
     public static void main(String[] args) {
 
+     Scanner scanner = new Scanner(System.in);   
+
+
         // Instanciação e configuração da Conta
         Conta conta_1 = new Conta();
+
+        System.out.println("Por favor, Informe seu nome:");
+        String nomeDoCliente = scanner.nextLine();
+        
+
+        //Qual é o seu nome
+
+
+        conta_1.setCliente(nomeDoCliente);        
+
+
+
         conta_1.setNumero(76521);
-        conta_1.setCliente("Alex Silva");
+
+
+
+        
+
+
+
         conta_1.setSaldo(100.0);
+
+
+
+
         conta_1.setLimite(100.0);
 
         // Instanciação da Receita
@@ -32,7 +57,7 @@ public class Programa {
         System.out.println("Saldo Atual: R$ " + conta_1.getSaldo());
 
         System.out.println("\nReceita:");
-        System.out.println("- Receita Cadastrada: R$ 2000.0");
+        System.out.println("- Receita Cadastrada: R$ 10000.0");
 
         System.out.println("\nDespesa:");
         System.out.println("- " + despesa_1.getDescricao() + ": R$ " + despesa_1.getValor());
