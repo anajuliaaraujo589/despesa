@@ -7,6 +7,10 @@ public class Despesa {
     private double valor;
     private String status;
 
+
+    public Despesa() {} 
+
+
     //construtor 2 parametros
     public Despesa(String descricao, double valor) {
         this.descricao = descricao;
